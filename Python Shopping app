@@ -1,0 +1,201 @@
+print ('Items: Apples, Bananas, Sandwhich, Popsicle')
+selection=raw_input('Select First Item\s: ')
+if selection=='apple':
+    a = 2.5
+    while True:
+        selection=raw_input('How Many Apples (limit 3): ')
+        if selection=='1':
+            p = a
+            print '<1 Apple added to Cart>'
+            break
+        elif selection=='2':
+            p = a*2
+            print '<2 Apples added too Cart>'
+            break
+        elif selection=='3':
+            p = a*3
+            print '<3 Apples added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='banana':
+    b = 3
+    while True:
+        selection=raw_input('How Many Bananas (limit 3): ')
+        if selection=='1':
+            p = b
+            print '<1 Banana added to Cart>'
+            break
+        elif selection=='2':
+            p = b*2
+            print '<2 Bananas added too Cart>'
+            break
+        elif selection=='3':
+            p = b*3
+            print '<3 Bananas added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='sandwhich':
+    s = 5
+    while True:
+        selection=raw_input('How Many Sandwhiches (limit 3): ')
+        if selection=='1':
+            p = s
+            print '<1 Sandwhich added to Cart>'
+            break
+        elif selection=='2':
+            p = s*2
+            print '<2 Sandwhiches added too Cart>'
+            break
+        elif selection=='3':
+            p = s*3
+            print '<3 Sandwhiches added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='popsicle':
+    h = 1.5
+    while True:
+        selection=raw_input('How Many Posicles (limit 3): ')
+        if selection=='1':
+            p = h
+            print '<1 Popsicle added to Cart>'
+            break
+        elif selection=='2':
+            p = h*2
+            print '<2 Popsicles added too Cart>'
+            break
+        elif selection=='3':
+            p = h*3
+            print '<3 Popsicles added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+else :
+    print '[unreadable\ no item added]'
+    print ' '
+    print '[reopen program after shutdown]'
+    print ' '
+    print '[program shutdown in 10seconds]'
+    for countdown in 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, quit():
+        print (countdown)
+     
+print ' '
+print ' '
+selection = raw_input ('Are you done Shopping?: ')
+if selection=='yes':
+    print ' '
+    print ('Your subtotal is:')
+    print ' '
+    fg= '${:.2f}'.format(p)
+    print (fg)
+    print ' '
+    print ('Your tax is:')
+    t = p*0.15
+    pr = '${:.2f}'.format(t)
+    print (pr)
+    n = p*1.15
+    sf = '${:.2f}'.format(n)
+    print ' '
+    print ('Your total is: ')
+    print ('Thank You for Shopping Here!')
+    if raw_input('Type Done(d) to Finish: ') in ['done', 'Done', 'd']:
+        quit()
+elif selection=='no':
+    print ('Items: Apples, Bananas')
+    selection=raw_input('Select First Item\s: ')
+if selection=='apple':
+    a = 2.5
+    while True:
+        selection=raw_input('How Many Apples (limit 3): ')
+        if selection=='1':
+            d = a
+            print '<1 Apple added to Cart>'
+            break
+        elif selection=='2':
+            d = a*2
+            print '<2 Apples added too Cart>'
+            break
+        elif selection=='3':
+            d = a*3
+            print '<3 Apples added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='banana':
+    b = 3
+    while True:
+        selection=raw_input('How Many Bananas (limit 3): ')
+        if selection=='1':
+            d = b
+            print '<1 Banana added to Cart>'
+            break
+        elif selection=='2':
+            d = b*2
+            print '<2 Bananas added too Cart>'
+            break
+        elif selection=='3':
+            d = b*3
+            print '<3 Bananas added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='sandwhich':
+    s = 5
+    while True:
+        selection=raw_input('How Many Sandwhiches (limit 3): ')
+        if selection=='1':
+            d = s
+            print '<1 Sandwhich added to Cart>'
+            break
+        elif selection=='2':
+            d = s*2
+            print '<2 Sandwhiches added too Cart>'
+            break
+        elif selection=='3':
+            d = s*3
+            print '<3 Sandwhiches added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+elif selection=='popsicle':
+    h = 1.5
+    while True:
+        selection=raw_input('How Many Posicles (limit 3): ')
+        if selection=='1':
+            d = h
+            print '<1 Popsicle added to Cart>'
+            break
+        elif selection=='2':
+            d = h*2
+            print '<2 Popsicles added too Cart>'
+            break
+        elif selection=='3':
+            d = h*3
+            print '<3 Popsicles added too Cart>'
+            break
+        else:
+            print '[try again]'
+            continue
+else:
+    print '[unreadable\ no item added]'
+
+    
+print ('Item Limit Reached (2)')
+print(' ')
+print ('Your Balance is:')
+z = p+d
+mo = '${:.2f}'.format(z)
+print (mo)
+print (' ')
+print ('Thank You for Shopping Here!')
+if raw_input('Type Done(d) to Finish: ') in ['done', 'Done', 'd']:
+    quit()
